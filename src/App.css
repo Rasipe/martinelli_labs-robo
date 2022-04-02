@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  background-color: rgb(248, 247, 247);
+  height: 100vh;
+  padding: 5vh 10vw;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container > :nth-child(1) {
+  flex-basis: 100%;
+}
+
+.container > :not(:first-child) {
+  flex-basis: 50%;
+  margin-top: 15px;
+}
